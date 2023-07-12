@@ -68,6 +68,7 @@
 #let accentColor = awesomeColors.at(awesomeColor)
 
 #let headerFont = "Roboto"
+#let bodyFont = "Source Sans Pro"
 
 #let beforeSectionSkip = 1pt
 #let beforeEntrySkip = 1pt
@@ -263,7 +264,7 @@
   if profilePhoto != "" {
     image(profilePhoto, height: 3.6cm)
   } else {
-    v(3.6cm)
+    v(3.3cm)
   }
 } 
 
@@ -299,24 +300,38 @@
 }
 
 #let cvEntry(
-  title: "Title",
-  society: "Society",
-  date: "Date",
-  location: "Location",
+  title: "",
+  society: "",
+  date: "",
+  location: "",
   description: "",
 ) = {
   v(beforeEntrySkip)
-  table(
-    columns: (1fr, auto),
-    inset: 0pt,
-    stroke: none,
-    row-gutter: 6pt,
-    align: auto,
-    {if varEntrySocietyFirst {entryA1Style(society)} else {entryA1Style(title)}},
-    {entryA2Style(date)},
-    {if varEntrySocietyFirst {entryB1Style(title)} else {entryB1Style(society)}},
-    {entryB2Style(location)},
-  )
+  if society != "" or location != "" {
+    table(
+      columns: (1fr, auto),
+      inset: 0pt,
+      stroke: none,
+      row-gutter: 6pt,
+      align: auto,
+      {entryA1Style(title)},
+      {entryA2Style(date)},
+      {entryB1Style(society)},
+      {entryB2Style(location)},
+    )
+  } else {
+    table(
+      columns: (1fr, auto),
+      inset: 0pt,
+      stroke: none,
+      row-gutter: 6pt,
+      align: auto,
+      {entryA1Style(title)},
+      {entryA2Style(date)},
+    )
+
+  }
+
   if description != "" {
     entryDescriptionStyle(description)
   }

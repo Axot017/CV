@@ -10,9 +10,9 @@
 #cvSkill(
   type: [Tach Stack],
   info: [
-    Flutter #hBar() Go #hBar() AWS #hBar() SQL #hBar() DynamoDB #hBar() 
-    Terraform #hBar() Postman #hBar() Rust #hBar() Dart #hBar() Git #hBar() 
-    Docker #hBar() Firebase #hBar() Neovim #hBar() VSCode #hBar() Bitrise #hBar() Codemagic #hBar() GitHub Actions
+    Go #hBar() SQL (MySQL, PostgreSQL) #hBar() AWS #hBar() Terraform #hBar() Flutter #hBar() Git #hBar()
+    Kubernetes #hBar() HELM #hBar() Rust #hBar() DynamoDB #hBar() Docker #hBar() Dart #hBar()  
+    Firebase #hBar() Neovim #hBar() GitHub Actions #hBar() Postman 
   ]
 )
 #v(6pt)

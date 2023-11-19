@@ -3,9 +3,21 @@
 #cvSection("Employment History")
 
 #cvEntry(
+    title: [Golang Developer],
+    society: [Crustlab Sp. z o.o.],
+    date: [2023 - Present],
+    location: [Remote, Poland],
+    description: list(
+      [Develop and maintain backend microservices in Golang using domain-driven design principles and best practices],
+      [Write unit and integration tests for Golang applications to ensure code quality and reliability],
+      [Collaborate with other developers and stakeholders to design and implement Golang APIs and ensure compatibility with frontend applications],
+    )
+)
+
+#cvEntry(
     title: [Senior Flutter Developer],
     society: [BinaryCortex LLC],
-    date: [2023 - Present],
+    date: [2023 - 2023],
     location: [Remote, USA],
     description: list(
       [Maintain a large-scale Flutter application with modular code structure and ensure its quality and reliability],

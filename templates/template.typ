@@ -57,7 +57,8 @@
   red: rgb("#DC3522"),
   nephritis: rgb("#27AE60"),
   concrete: rgb("#95A5A6"),
-  darknight: rgb("#131A28"),
+  darknight: rgb("#131A28"), 
+  purple: rgb("#4e03fc"),
 )
 
 #let regularColors = (
@@ -233,7 +234,7 @@
       personalInfoIcons.at(k) + h(5pt)
       // Adds hyperlinks
       if k == "email" {
-        link("mailto:" + v)[#v]
+        link("mailto:" + v)[ #v]
       } else if k == "linkedin" {
         link("https://www.linkedin.com/in/" + v)[#v]
       } else if k == "github" {

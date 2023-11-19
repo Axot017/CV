@@ -3,23 +3,24 @@
 #cvSection("Selected Projects")
 
 #cvEntry(
-    title: [InPost Fresh],
+    title: [Lottery System],
     date: [],
     description: [
-      An M-commerce application that allows users to shop for groceries from the comfort of their homes.
-      Users can select the products they need and have them delivered to their doorstep by a courier. 
+      The platform let people buy tickets, play games, and win prizes.
+      Some of the tasks were selling tickets, generating reports, managing wallets, and calculating winnings.
 
-      *Technologies:* Flutter, Dart, REST, Firebase, Bitrise, Codemagic 
-    ] 
+      *Technologies:* Golang, MySQL, Docker, GCP, Kubernetes
+    ]
 )
 
 #cvEntry(
-    title: [GoTiny],
+    title: [InPost Fresh],
     date: [],
     description: [
-      A URL shortener service that allows users to create short links and track their usage.
-      
-      *Technologies:* Go, AWS, DynamoDB, Docker
+      An M-commerce servicelication that allows users to shop for groceries from the comfort of their homes.
+      Users can select the products they need and have them delivered to their doorstep by a courier. 
+
+      *Technologies:* Flutter, Dart, REST, Firebase, Bitrise, Codemagic 
     ] 
 )
 
@@ -32,15 +33,4 @@
 
       *Technologies:* Kotlin, Ktor, MySQL, GCP App Engine, Flutter, Dart, Firebase, Bitrise
     ] 
-)
-
-#cvEntry(
-    title: [Mobile Casino App],
-    date: [],
-    description: [
-      A white-label modularized mobile application for playing slot games.
-      The games are run through a web view thanks to a self-hosted HTTP server with a React application designed for launching games.
-
-      *Technologies:* Flutter, Dart, REST, Firebase, Bitrise, Rollbar, JavaScript
-    ]
 )

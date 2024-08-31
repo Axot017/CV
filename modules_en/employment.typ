@@ -1,21 +1,25 @@
-#import "../templates/template.typ": *
+#import "@preview/brilliant-cv:2.0.2": cvSection, cvEntry
+#let metadata = toml("../metadata.toml")
+#let cvSection = cvSection.with(metadata: metadata)
+#let cvEntry = cvEntry.with(metadata: metadata)
 
 #cvSection("Employment History")
 
 #cvEntry(
-    title: [Golang Developer],
+    title: [Software Engineer],
     society: [Crustlab Sp. z o.o.],
     date: [2023 - Present],
     location: [Remote, Poland],
     description: list(
-      [Develop and maintain backend microservices in Golang using domain-driven design principles and best practices],
-      [Write unit and integration tests for Golang applications to ensure code quality and reliability],
-      [Collaborate with other developers and stakeholders to design and implement Golang APIs and ensure compatibility with frontend applications],
+      [Develop and maintain backend microservices using Golang and Java, applying domain-driven design principles and event sourcing],
+      [Write unit and integration tests for Golang and Java applications to ensure code quality and reliability],
+      [Collaborate with other developers and stakeholders to design and implement APIs in Golang and Java, ensuring compatibility with frontend applications],
+      [Participate in pre-sales activities, including new project estimations and technical consultations],
     )
 )
 
 #cvEntry(
-    title: [Senior Flutter Developer],
+    title: [Software Engineer],
     society: [BinaryCortex LLC],
     date: [2023 - 2023],
     location: [Remote, USA],
@@ -26,7 +30,7 @@
 )
 
 #cvEntry(
-    title: [Senior Flutter Developer],
+    title: [Software Engineer],
     society: [Iteo S.A.],
     date: [2020 - 2023],
     location: [Katowice, Poland],
@@ -38,7 +42,7 @@
 )
 
 #cvEntry(
-    title: [Flutter Developer],
+    title: [Junior Software Engineer],
     society: [EUVIC S.A.],
     date: [2019 - 2020],
     location: [Gliwice, Poland],

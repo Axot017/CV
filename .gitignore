@@ -1,4 +1,3 @@
 **/.DS_Store
-out/private.pdf
-metadata.typ
+metadata.toml
 out/*

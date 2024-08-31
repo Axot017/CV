@@ -1,4 +1,6 @@
-#import "../templates/template.typ": *
+#import "@preview/brilliant-cv:2.0.2": cvSection, cvSkill, hBar
+#let metadata = toml("../metadata.toml")
+#let cvSection = cvSection.with(metadata: metadata)
 
 #cvSection("Skills")
 
@@ -8,10 +10,11 @@
 )
 
 #cvSkill(
-  type: [Tach Stack],
+  type: [Tachnologies],
   info: [
+    Java #hBar() Spring #hBar() Spock #hBar() MongoDB #hBar() Keycloak #hBar() Kafka #hBar()
     Go #hBar() SQL (MySQL, PostgreSQL) #hBar() AWS #hBar() Terraform #hBar() Flutter #hBar() Git #hBar()
-    Kubernetes #hBar() HELM #hBar() Rust #hBar() DynamoDB #hBar() Docker #hBar() Dart #hBar()  
+    Rust #hBar() DynamoDB #hBar() Docker #hBar() Dart #hBar()  
     Firebase #hBar() Neovim #hBar() GitHub Actions #hBar() Postman 
   ]
 )
